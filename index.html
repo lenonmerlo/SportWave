@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportWave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SportWave</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#about">Sobre a Loja</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#cart">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="about-content">
+            <img src="images/loja.jpeg" alt="Loja de Volei">
+            <div>
+                <h2>Sobre a Loja</h2>
+                <p>Somos especialistas em produtos de voleibol. Nossos produtos são de alta qualidade e feitos para atender tanto amadores quanto profissionais do esporte.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Nossos Produtos</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/bola_volei.jpg" alt="Produto 1">
+                <h3>Bola de Volei</h3>
+                <p>Alta performance para jogos oficiais.</p>
+                <p class="price">R$ 120,00</p>
+                <button onclick="addToCart('Bola de Volei')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-item">
+                <img src="images/rede.jpg" alt="Produto 2">
+                <h3>Rede de Volei</h3>
+                <p>Resistente para quadras internas e externas.</p>
+                <p class="price">R$ 80,00</p>
+                <button onclick="addToCart('Rede de Volei')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-item">
+                <img src="images/12032-joelheira-de-volei-n1-spry-branca-e-preta.jpg" alt="Produto 3">
+                <h3>Joelheiras</h3>
+                <p>Proteção extra para suas partidas.</p>
+                <p class="price">R$ 60,00</p>
+                <button onclick="addToCart('Joelheiras')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-item">
+                <img src="images/uniforme.jpg" alt="Produto 4">
+                <h3>Uniforme</h3>
+                <p>Conforto e estilo em quadra.</p>
+                <p class="price">R$ 150,00</p>
+                <button onclick="addToCart('Uniforme')">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="social-media">
+        <h2>Acesse Nossas Redes Sociais</h2>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Seu Carrinho</h2>
+        <div id="cart-items"></div>
+        <button onclick="continueShopping()">Continuar Comprando</button>
+        <button onclick="finalizePurchase()">Finalizar Compra</button>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Lenon Merlo</p>
+        <p>Esta é uma loja fictícia criada como exercício de aprendizagem do curso de Engenharia Front-end EBAC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
